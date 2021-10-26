@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Top Oregon Hikes</title>
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+            <th>Zipcode</th>
+            <th>Hike</th>
+            <th>Length (miles)</th>
+            <th>Difficulty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>97221</td>
+            <td>Wildwood Trail</td>
+            <td>30</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>97028</td>
+            <td>Timberline Trail</td>
+            <td>40</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>97827</td>
+            <td>Eagle Cap</td>
+            <td>8</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>97501</td>
+            <td>Grizzily Peak</td>
+            <td>5</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>97701</td>
+            <td>Mt. Bachelor</td>
+            <td>6</td>
+            <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="http://localhost:3000/hlist" method="POST">
+    <br />
+        <fieldset>
+            <legend>Hike weather page:</legend>
+            <p>
+                <label for="hike-choice">Which hike would you like the weather for?</label>
+                <select name="hike" id="hike-choice">
+                    <option value=97221>Wildwood Trail</option>
+                    <option value=97028>Timberline Trail</option>
+                    <option value=97827>Eagle Cap</option>
+                    <option value=97501>Grizzily Peak</option>
+                    <option value=97701>Mt. Bachelor</option>
+                </select>
+            </p>
+            
+<!--
+            <label>How many shares would you like to purchase?
+              <input type="number" name="shares" size="10" maxlength="5" required="required">
+            </label>
+        -->
+          <br />
+          <br />
+          <button type="submit">Weather</button>
+        </fieldset>
+        
+        
+    </form>
+    <p>To return to the Home Page click the link below.
+    </p>
+    <a href="./index.html">Home Page</a>
+  </body>
+</html>
