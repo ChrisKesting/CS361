@@ -4,7 +4,7 @@ Load all the files into a folder called "hike_server" without the parenthesis an
 
 Change directory to hike_server (cd .\hike_server\\)
 
-run npm init to generate the node modules
+run npm install to generate the node modules
 
 run npm start
 
