@@ -2,9 +2,9 @@
 import mongoose from 'mongoose';
 
 // Prepare to the database hikes_db in the MongoDB server running locally on port 27017
-mongoose.connect(
-    'mongodb://localhost:27017/hikes_db',
-    { useNewUrlParser: true }
+await mongoose.connect(
+    'mongodb://127.0.0.1:27017/hikes_db',
+    { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
 // Connect to to the database
