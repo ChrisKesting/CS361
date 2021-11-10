@@ -1,6 +1,8 @@
 import * as hikes from './hikes_model.mjs';
 import express from 'express';
+import cors from 'cors';
 const app = express();
+app.use(cors());
 
 const PORT = 3040;
 
