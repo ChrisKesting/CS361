@@ -3,7 +3,7 @@ To start the hiking app server:
 
 Load all the files into a folder called "hike_server" without the parenthesis and load folder into express.
 
-Change directory to hike_server (cd .\hike_server\)
+Change directory to hike_server (cd .\hike_server\\)
 
 run npm install to generate the node modules
 
