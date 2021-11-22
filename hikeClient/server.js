@@ -31,7 +31,8 @@ app.post("/hlist", (req, res) => {
         var temp = body.temperature
         var city = body.cityName
         console.log(result.body)
-        res.send(`The weather in zip code ${zip} with closest city, ${city}, is ${weather} with a high of ${temp} F.`);
+        res.send(`The weather in zip code ${zip} with closest city, ${city}, is ${weather} with a high of ${temp} F.\n
+        Click the back arrow to return to the Hike Page.`);
     })
  
     
